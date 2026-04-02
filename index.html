@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - La Colonial</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fcf9f2;
+            color: #3e2723;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #8d6e63;
+            margin-bottom: 30px;
+        }
+        .logo-container {
+            margin-bottom: 15px;
+        }
+        .logo-container img {
+            max-width: 180px;
+            height: auto;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .subtitle {
+            font-style: italic;
+            color: #5d4037;
+        }
+        .menu-container {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media (min-width: 768px) {
+            .menu-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .category {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #efebe1;
+        }
+        .category h2 {
+            border-bottom: 1px solid #d7ccc8;
+            padding-bottom: 5px;
+            color: #4e342e;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .menu-item {
+            margin-bottom: 15px;
+        }
+        .item-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            display: block;
+        }
+        .item-desc {
+            font-size: 0.9em;
+            color: #6d4c41;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo La Colonial">
+    </div>
+    <h1>PANADERÍA LA COLONIAL</h1>
+    <p class="subtitle">CALIDAD ARTESANAL PANES & REPOSTERIA & SANDWICHS | HECHO CON AMOR</p>
+    <p class="subtitle">PARADOR CAFETERÍA | GUSTITO DE ÉPOCA TRADICION & SAZÓN</p>
+</header>
+
+<div class="menu-container">
+
+    <section class="category">
+        <h2>☕ CAFETERÍA CALIENTE</h2>
+        <div class="menu-item">
+            <span class="item-name">Café de la casa</span>
+            <p class="item-desc">Vending Coffee clásico.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Submarino</span>
+            <p class="item-desc">Barra de chocolate en leche caliente.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Café de especialidad</span>
+            <p class="item-desc">Drupa - Café de diseño Colombia Palmera</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Chocolatada</span>
+            <p class="item-desc">Leche chocolatada fría o caliente</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Espresso</span>
+            <p class="item-desc">Café puro y concentrado.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Americano</span>
+            <p class="item-desc">Espresso rebajado con agua caliente.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Latte</span>
+            <p class="item-desc">Espresso con abundante leche vaporizada.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Latte Colonial</span>
+            <p class="item-desc">Tazón grande de café con leche.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Café Doble</span>
+            <p class="item-desc">Doble medida de café espresso.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Flat White</span>
+            <p class="item-desc">Espresso doble con leche texturizada.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Capuccino</span>
+            <p class="item-desc">Espresso, leche vaporizada y espuma.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Café Baileys</span>
+            <p class="item-desc">Café caliente con licor Baileys</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Capuccino Bombón</span>
+            <p class="item-desc">Capuccino dulce con crema Nutella.</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>🧊 FRIO</h2>
+        <div class="menu-item">
+            <span class="item-name">Capuccino La Colonial</span>
+            <p class="item-desc">Capuccino helado servido con crema.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Frapuccino</span>
+            <p class="item-desc">Batido helado de café y leche.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Café Baileys</span>
+            <p class="item-desc">Café helado con licor Baileys.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Iced Flat White</span>
+            <p class="item-desc">Flat white servido con hielo.</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>🍵 TÉ</h2>
+        <div class="menu-item">
+            <span class="item-name">Té en saquitos</span>
+            <p class="item-desc">Variedad clásica de té en saquitos.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Té en hebras</span>
+            <p class="item-desc">Infusión premium de té en hebras.</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>🥐 DESAYUNOS Y MERIENDAS</h2>
+        <div class="menu-item">
+            <span class="item-name">Porteño Clásico</span>
+            <p class="item-desc">2 medialunas con jugo o café</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Tostadas Colonial</span>
+            <p class="item-desc">Panes con mermelada queso, manteca/dulce.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Granola Colonial</span>
+            <p class="item-desc">Yogur natural, miel, banana, frutos rojos.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Leche Vegetal</span>
+            <p class="item-desc">Reemplaza yogur por leche de almendras.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Bowl de energía</span>
+            <p class="item-desc">Peras, yogur, avena, chía, nueces.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Avocado Toast</span>
+            <p class="item-desc">Tostada, queso crema, palta, huevos revueltos.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Power Toast</span>
+            <p class="item-desc">Tostada, huevos, panceta y quesos.</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>🥟 SALADOS Y OTROS</h2>
+        <div class="menu-item">
+            <span class="item-name">Pebete</span>
+            <p class="item-desc">Sandwich en pan pebete suave,</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Jamón y Queso</span>
+            <p class="item-desc">Sandwich clásico (consultar variedad de pan).</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Medialuna JyQ</span>
+            <p class="item-desc">Medialuna rellena de fiambre y queso.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Tartas Saladas</span>
+            <p class="item-desc">Porción de tarta casera consultar sabor)</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Croissant Relleno</span>
+            <p class="item-desc">Sabores: pastelera, dulce de leche, pistacho.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Croissant JyQ</span>
+            <p class="item-desc">Croissant salado con jamón y queso.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Sacramento</span>
+            <p class="item-desc">Factura salada clásica e ideal.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Chipa Relleno</span>
+            <p class="item-desc">Pan de queso con relleno especial.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Chipa de JyQ</span>
+            <p class="item-desc">Pan de queso con fiambre.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Empanadas</span>
+            <p class="item-desc">Caseras al horno (carne o pollo)</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>🍞 TOSTADOS</h2>
+        <div class="menu-item">
+            <span class="item-name">Tostado</span>
+            <p class="item-desc">Clásico sándwich tostado de miga.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Sándwiches de Miga</span>
+            <p class="item-desc">Clásicos sandwiches fríos de pan fing</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>🍔 SANDWICHES</h2>
+        <div class="menu-item">
+            <span class="item-name">De ternera</span>
+            <p class="item-desc">Ternera, panceta, cebolla caramelizada, papas.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">De BBQ</span>
+            <p class="item-desc">Bondiola, cheddar, cebolla caramelizada, papas.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">De Pollo Crispy</span>
+            <p class="item-desc">Pollo crocante, queso, vegetales y mayonesa.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">De Milanesa</span>
+            <p class="item-desc">De pollo, cerdo o carne, completo.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">De Albondigas</span>
+            <p class="item-desc">Con salsa criolla</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">L'uisine</span>
+            <p class="item-desc">De osobuco al tinto Especialidad de la casa</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>🧀 PICADAS</h2>
+        <div class="menu-item">
+            <span class="item-name">Picada Colonial</span>
+            <p class="item-desc">Tabla de fiambres y quesos variados.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Picada de Mar</span>
+            <p class="item-desc">Rabas, langostinos cornalitos, merluza, dips.</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>🥤 LICUADOS</h2>
+        <div class="menu-item">
+            <span class="item-name">De banana</span>
+            <p class="item-desc">Clásico batido con leche o agua.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Multifrutas</span>
+            <p class="item-desc">Mix refrescante de frutas variadas.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Milkshake</span>
+            <p class="item-desc">Batido cremoso de helado y leche.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Fruta de Estación</span>
+            <p class="item-desc">Licuado con frutas frescas de temporada.</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>🍊 EXPRIMIDOS</h2>
+        <div class="menu-item">
+            <span class="item-name">Exprimido de Naranja</span>
+            <p class="item-desc">Jugo puro de naranjas recién exprimidas.</p>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Limonada</span>
+            <p class="item-desc">Jugo de limón natural y agua.</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>🚰 BEBIDAS</h2>
+        <div class="menu-item"><span class="item-name">Agua Mineral</span></div>
+        <div class="menu-item"><span class="item-name">Agua Saborizada</span></div>
+        <div class="menu-item"><span class="item-name">Gaseosa linea coca</span></div>
+        <div class="menu-item"><span class="item-name">Jugo Baggio chico</span></div>
+    </section>
+
+    <section class="category">
+        <h2>🍰 TORTAS, ALFAJORES Y OTROS</h2>
+        <div class="menu-item"><span class="item-name">Alfajor Artesanal</span></div>
+        <div class="menu-item"><span class="item-name">Pastafrola</span></div>
+        <div class="menu-item"><span class="item-name">Muffins</span></div>
+        <div class="menu-item"><span class="item-name">Alfajor de Choco blanco</span></div>
+        <div class="menu-item"><span class="item-name">Alfajor de Maicena</span></div>
+        <div class="menu-item"><span class="item-name">Mini Carrot</span></div>
+        <div class="menu-item"><span class="item-name">Brownies</span></div>
+        <div class="menu-item"><span class="item-name">Lemon Pie</span></div>
+        <div class="menu-item"><span class="item-name">Cheesecake</span></div>
+        <div class="menu-item"><span class="item-name">Selva Negra</span></div>
+        <div class="menu-item"><span class="item-name">Brownie de Oreo</span></div>
+        <div class="menu-item"><span class="item-name">Brownie de Nuez</span></div>
+        <div class="menu-item"><span class="item-name">Tarta de Ricota</span></div>
+    </section>
+
+    <section class="category">
+        <h2>🍮 POSTRES</h2>
+        <div class="menu-item"><span class="item-name">Arroz con leche</span></div>
+        <div class="menu-item"><span class="item-name">Flan casero</span></div>
+        <div class="menu-item"><span class="item-name">Budín de pan</span></div>
+        <div class="menu-item"><span class="item-name">Panqueque con dulce de leche</span></div>
+        <div class="menu-item"><span class="item-name">Tiramisú</span></div>
+    </section>
+
+</div>
+
+</body>
+</html>
